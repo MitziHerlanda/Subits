@@ -146,15 +146,42 @@
 										<div class="row form-group">
 											<div class="col-md-12">
 												<label for="fecha">Fecha de entrega</label>
-												<input type="text" id="fecha" class="form-control" placeholder="DD/MM/AAAA">
+												<input type="date" id="fecha" class="form-control" placeholder="DD/MM/AAAA">
 											</div>
 										</div>
 										<div class="row form-group">
 											<div class="col-md-12">
-												<label for="hora">Hora en formato 24 hrs</label>
-												<input type="text" id="hora" class="form-control" placeholder="00:00">
+												<label for="hora">Hora en formato 00:00 am/pm</label>
+												<input type="time" id="hora" class="form-control" placeholder="00:00">
 											</div>
 										</div>
+
+										<div class="row form-group">
+											<div class="col-md-12">
+												<label for="tipo">Tipo de encargo</label>
+												<p> de tu hogar, qué tan lejos está el destino?</p>
+												<select name="tipo">
+													<option value="1">viaje mini (menos de 2 km)</option>
+													<option value="2">viaje corto (2 a 5 km)</option>
+													<option value="3">viaje mediano (5 a 10 km)</option>
+													<option value="4">viaje largo (10 a 20 km)</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="row form-group">
+											<div class="col-md-12">
+												<label for="extra">Compra</label>
+												<p> tu encargo requiere que el colaborador compre algo?</p>
+												<select name="extra">
+													<option value="1">no</option>
+													<option value="2">sí, y cuesta entre $1 y $50</option>
+													<option value="3">sí, y cuesta entre $50 y $100</option>
+													<option value="4">sí, y cuesta entre $100 y $200</option>
+												</select>
+											</div>
+										</div>
+
 										<div class="row form-group">
 											<div class="col-md-12">
 												<label for="encargo">Encargo</label>
